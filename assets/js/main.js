@@ -14,8 +14,7 @@ const scrollHeader = () =>{
         navbarElement.classList.remove('activated');
     }
 }
-
-window.addEventListener('scroll', scrollHeader);
+this.window.addEventListener('scroll', scrollHeader);
 
 // Open menu & search pop-up
 const menuToggleIcon = selectElement('#menu-toggle-icon');
