@@ -14,7 +14,7 @@ const scrollHeader = () => {
 }
 window.addEventListener("scroll", scrollHeader)
 
-const menuToggleIcon = selectElement("#menu-toggle-icon")
+const menuToggleIcon = document.getElementById("menu-toggle-icon")
 const toggleMenu = () => {
     const mobileMenu = selectElement("#menu")
     mobileMenu.classList.toggle("activated")
@@ -45,7 +45,7 @@ if (currentTheme) {
 themeBtn.addEventListener("click", () => {
     bodyElement.classList.toggle("light-theme")
     if (bodyElement.classList.contains("light-theme")) {
-        localStorage.setItem("currentTheme", "themeActice")
+        localStorage.setItem("currentTheme", "themeActive")
     } else {
         localStorage.removeItem("currentTheme")
     }
