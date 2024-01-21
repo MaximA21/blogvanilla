@@ -18,7 +18,7 @@ this.window.addEventListener('scroll', scrollHeader);
 
 // Open menu & search pop-up
 const menuToggleIcon = document.getElementById('menu-toggle-icon');
-const formOpenBtn = selectElement('#search-icon');
+const formOpenBtn = document.getElementById("search-icon");
 const formCloseBtn = selectElement('#form-close-btn');
 const searchContainer = selectElement('#search-form-container');
 
